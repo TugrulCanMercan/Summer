@@ -24,9 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		930C49E1295E23C6008EB698 /* InfrastructurePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = InfrastructurePackage; path = SummerSitePackageList/InfrastructurePackage; sourceTree = "<group>"; };
-		930C49E2295E23D8008EB698 /* SummerAppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SummerAppPackage; path = SummerSitePackageList/SummerAppPackage; sourceTree = "<group>"; };
-		930C49E3295E23F6008EB698 /* UIComponentsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UIComponentsPackage; path = SummerSitePackageList/UIComponentsPackage; sourceTree = "<group>"; };
 		93166373295627EC00100536 /* SummerSiteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerSiteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93166376295627EC00100536 /* SummerSiteProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerSiteProjectApp.swift; sourceTree = "<group>"; };
 		93166378295627EC00100536 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +39,9 @@
 		931DEC5C295E2DC70016D915 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		931DEC5D295E2DC70016D915 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		932815ED295CD5A1004F8ABC /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		935173D8295E346300601F09 /* InfrastructurePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InfrastructurePackage; sourceTree = "<group>"; };
+		935173D9295E347300601F09 /* SummerAppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SummerAppPackage; sourceTree = "<group>"; };
+		935173DA295E347E00601F09 /* UIComponentsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponentsPackage; sourceTree = "<group>"; };
 		9355C5AC2958A61F008D2B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +67,7 @@
 		9316636A295627EC00100536 = {
 			isa = PBXGroup;
 			children = (
-				93166397295628B700100536 /* Packages */,
+				935173D7295E346300601F09 /* Packages */,
 				93166375295627EC00100536 /* SummerSiteProject */,
 				931663892956281E00100536 /* LoginAndSignModule */,
 				93166374295627EC00100536 /* Products */,
@@ -125,16 +125,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		93166397295628B700100536 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				930C49E1295E23C6008EB698 /* InfrastructurePackage */,
-				930C49E2295E23D8008EB698 /* SummerAppPackage */,
-				930C49E3295E23F6008EB698 /* UIComponentsPackage */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		931DEC58295E2DC70016D915 /* SummerSiteProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +142,16 @@
 				931DEC5C295E2DC70016D915 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		935173D7295E346300601F09 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				935173D8295E346300601F09 /* InfrastructurePackage */,
+				935173D9295E347300601F09 /* SummerAppPackage */,
+				935173DA295E347E00601F09 /* UIComponentsPackage */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		9355C5A92958A5E7008D2B91 /* Frameworks */ = {
