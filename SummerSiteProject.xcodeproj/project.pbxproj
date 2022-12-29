@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93166377295627EC00100536 /* SummerSiteProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93166376295627EC00100536 /* SummerSiteProjectApp.swift */; };
+		93166379295627EC00100536 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93166378295627EC00100536 /* ContentView.swift */; };
+		9316637B295627ED00100536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9316637A295627ED00100536 /* Assets.xcassets */; };
+		9316637E295627ED00100536 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9316637D295627ED00100536 /* Preview Assets.xcassets */; };
+		9316638B2956281E00100536 /* LoginAndSignModuleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316638A2956281E00100536 /* LoginAndSignModuleApp.swift */; };
+		9316638D2956281E00100536 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316638C2956281E00100536 /* ContentView.swift */; };
+		9316638F2956281E00100536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9316638E2956281E00100536 /* Assets.xcassets */; };
+		931663922956281E00100536 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931663912956281E00100536 /* Preview Assets.xcassets */; };
+		932815EE295CD5A1004F8ABC /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932815ED295CD5A1004F8ABC /* Work.swift */; };
+		93454D812958BC7F00556C35 /* SummerAppPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 93454D802958BC7F00556C35 /* SummerAppPackage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		930C49E1295E23C6008EB698 /* InfrastructurePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = InfrastructurePackage; path = SummerSitePackageList/InfrastructurePackage; sourceTree = "<group>"; };
+		930C49E2295E23D8008EB698 /* SummerAppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SummerAppPackage; path = SummerSitePackageList/SummerAppPackage; sourceTree = "<group>"; };
+		930C49E3295E23F6008EB698 /* UIComponentsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UIComponentsPackage; path = SummerSitePackageList/UIComponentsPackage; sourceTree = "<group>"; };
+		93166373295627EC00100536 /* SummerSiteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerSiteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93166376295627EC00100536 /* SummerSiteProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerSiteProjectApp.swift; sourceTree = "<group>"; };
+		93166378295627EC00100536 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9316637A295627ED00100536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9316637D295627ED00100536 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		931663882956281E00100536 /* LoginAndSignModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginAndSignModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9316638A2956281E00100536 /* LoginAndSignModuleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndSignModuleApp.swift; sourceTree = "<group>"; };
+		9316638C2956281E00100536 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9316638E2956281E00100536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		931663912956281E00100536 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		932815ED295CD5A1004F8ABC /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		9355C5AC2958A61F008D2B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93166370295627EC00100536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931663852956281E00100536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93454D812958BC7F00556C35 /* SummerAppPackage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9316636A295627EC00100536 = {
+			isa = PBXGroup;
+			children = (
+				93166397295628B700100536 /* Packages */,
+				93166375295627EC00100536 /* SummerSiteProject */,
+				931663892956281E00100536 /* LoginAndSignModule */,
+				93166374295627EC00100536 /* Products */,
+				9355C5A92958A5E7008D2B91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93166374295627EC00100536 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93166373295627EC00100536 /* SummerSiteProject.app */,
+				931663882956281E00100536 /* LoginAndSignModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93166375295627EC00100536 /* SummerSiteProject */ = {
+			isa = PBXGroup;
+			children = (
+				93166376295627EC00100536 /* SummerSiteProjectApp.swift */,
+				93166378295627EC00100536 /* ContentView.swift */,
+				9316637A295627ED00100536 /* Assets.xcassets */,
+				9316637C295627ED00100536 /* Preview Content */,
+			);
+			path = SummerSiteProject;
+			sourceTree = "<group>";
+		};
+		9316637C295627ED00100536 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9316637D295627ED00100536 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		931663892956281E00100536 /* LoginAndSignModule */ = {
+			isa = PBXGroup;
+			children = (
+				9355C5AC2958A61F008D2B91 /* Info.plist */,
+				9316638A2956281E00100536 /* LoginAndSignModuleApp.swift */,
+				9316638C2956281E00100536 /* ContentView.swift */,
+				9316638E2956281E00100536 /* Assets.xcassets */,
+				931663902956281E00100536 /* Preview Content */,
+				932815ED295CD5A1004F8ABC /* Work.swift */,
+			);
+			path = LoginAndSignModule;
+			sourceTree = "<group>";
+		};
+		931663902956281E00100536 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				931663912956281E00100536 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93166397295628B700100536 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				930C49E1295E23C6008EB698 /* InfrastructurePackage */,
+				930C49E2295E23D8008EB698 /* SummerAppPackage */,
+				930C49E3295E23F6008EB698 /* UIComponentsPackage */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		9355C5A92958A5E7008D2B91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93166372295627EC00100536 /* SummerSiteProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93166381295627ED00100536 /* Build configuration list for PBXNativeTarget "SummerSiteProject" */;
+			buildPhases = (
+				9316636F295627EC00100536 /* Sources */,
+				93166370295627EC00100536 /* Frameworks */,
+				93166371295627EC00100536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SummerSiteProject;
+			productName = SummerSiteProject;
+			productReference = 93166373295627EC00100536 /* SummerSiteProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		931663872956281E00100536 /* LoginAndSignModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931663932956281E00100536 /* Build configuration list for PBXNativeTarget "LoginAndSignModule" */;
+			buildPhases = (
+				931663842956281E00100536 /* Sources */,
+				931663852956281E00100536 /* Frameworks */,
+				931663862956281E00100536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginAndSignModule;
+			packageProductDependencies = (
+				93454D802958BC7F00556C35 /* SummerAppPackage */,
+			);
+			productName = LoginAndSignModule;
+			productReference = 931663882956281E00100536 /* LoginAndSignModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9316636B295627EC00100536 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					93166372295627EC00100536 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					931663872956281E00100536 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 9316636E295627EC00100536 /* Build configuration list for PBXProject "SummerSiteProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9316636A295627EC00100536;
+			productRefGroup = 93166374295627EC00100536 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93166372295627EC00100536 /* SummerSiteProject */,
+				931663872956281E00100536 /* LoginAndSignModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93166371295627EC00100536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9316637E295627ED00100536 /* Preview Assets.xcassets in Resources */,
+				9316637B295627ED00100536 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931663862956281E00100536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931663922956281E00100536 /* Preview Assets.xcassets in Resources */,
+				9316638F2956281E00100536 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9316636F295627EC00100536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93166379295627EC00100536 /* ContentView.swift in Sources */,
+				93166377295627EC00100536 /* SummerSiteProjectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931663842956281E00100536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9316638D2956281E00100536 /* ContentView.swift in Sources */,
+				9316638B2956281E00100536 /* LoginAndSignModuleApp.swift in Sources */,
+				932815EE295CD5A1004F8ABC /* Work.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9316637F295627ED00100536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93166380295627ED00100536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93166382295627ED00100536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SummerSiteProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 948AT25T94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = firstProject.SummerSiteProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93166383295627ED00100536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SummerSiteProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 948AT25T94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = firstProject.SummerSiteProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		931663942956281E00100536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LoginAndSignModule/Preview Content\"";
+				DEVELOPMENT_TEAM = 948AT25T94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoginAndSignModule/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = firstProject.LoginAndSignModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		931663952956281E00100536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LoginAndSignModule/Preview Content\"";
+				DEVELOPMENT_TEAM = 948AT25T94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoginAndSignModule/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = firstProject.LoginAndSignModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9316636E295627EC00100536 /* Build configuration list for PBXProject "SummerSiteProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9316637F295627ED00100536 /* Debug */,
+				93166380295627ED00100536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93166381295627ED00100536 /* Build configuration list for PBXNativeTarget "SummerSiteProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93166382295627ED00100536 /* Debug */,
+				93166383295627ED00100536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		931663932956281E00100536 /* Build configuration list for PBXNativeTarget "LoginAndSignModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931663942956281E00100536 /* Debug */,
+				931663952956281E00100536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93454D802958BC7F00556C35 /* SummerAppPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SummerAppPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9316636B295627EC00100536 /* Project object */;
+}
