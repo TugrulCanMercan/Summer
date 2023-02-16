@@ -12,12 +12,14 @@ public struct NewTTTextField: View {
     var errorHandleText: String
     @State var height: CGFloat
     @State var placeholder: String
+    var isSecureEnable: Bool = false
     
-    public init(text:Binding<String>, errorHandleText: String, height: CGFloat = 30, placeholder: String) {
+    public init(text:Binding<String>, errorHandleText: String, height: CGFloat = 30, placeholder: String,isSecureEnable: Bool = false) {
         self._text = text
         self.errorHandleText = errorHandleText
         self.height = height
         self.placeholder = placeholder
+        self.isSecureEnable = isSecureEnable
     }
     
     public var body: some View {
@@ -36,10 +38,17 @@ public struct NewTTTextField: View {
                                     .offset(x: 10, y: -geo.size.height)
                                     .transition( .offset(x: 0, y: geo.size.height + 10).combined(with: .opacity))
                             }
-                                TextField("dsadsa", text: $text)
+                            if isSecureEnable {
+                                SecureField(placeholder, text: $text)
+                                    .padding(.horizontal)
+                                        .foregroundColor(text.isEmpty ? .gray : .black)
+                                        .frame(height: geo.size.height,alignment: .center)
+                            } else {
+                                TextField(placeholder, text: $text)
+                                .padding(.horizontal)
                                     .foregroundColor(text.isEmpty ? .gray : .black)
                                     .frame(height: geo.size.height,alignment: .center)
-                            
+                            }
                         }
                         .animation(.easeOut, value: errorHandleText)
                         .preference(key: BorderPrefrencesKey.self, value: geo.size.height)

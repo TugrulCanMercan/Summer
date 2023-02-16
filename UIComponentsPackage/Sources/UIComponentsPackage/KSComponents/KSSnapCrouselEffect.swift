@@ -115,6 +115,7 @@ struct DemoView:View{
         }
     }
 }
+
 struct Post:Identifiable{
     var id =  UUID().uuidString
     var postImage:String

@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-public final class TTMNavbarViewModel:NavigationStackDestinationDatasource<Model>, ObservableObject {
+open class TTMNavbarViewModel:NavigationStackDestinationDatasource<Model>, ObservableObject {
     @Published var navbartitle: String = ""
     @Published var rightToolButtonVM: TTMButtonViewModel?
     @Published var leftToolButtonVM: TTMButtonViewModel?
@@ -16,7 +16,6 @@ public final class TTMNavbarViewModel:NavigationStackDestinationDatasource<Model
     public init(navbartitle: String = ""
          ) {
         self.navbartitle = navbartitle
-        
     }
 
     public override func getItem(stackId: String) -> Model? {
@@ -25,16 +24,13 @@ public final class TTMNavbarViewModel:NavigationStackDestinationDatasource<Model
     }
     
     public override func configrationResend(stackId: String) {
-//        guard let item = navigationStack.first(where: {$0.id == stackId}) else { return }
-//        navbartitle = item.title
-//        rightToolButtonVM = item.rightToolButtonVM
-//        leftToolButtonVM = item.leftToolButtonVM
+
     }
 
 }
 
 
-public class NavigationStackDestinationDatasource<T:NavigationStackItem> {
+open class NavigationStackDestinationDatasource<T:NavigationStackItem> {
     @Published var navigationStack:[T] = []
     
     
@@ -65,7 +61,7 @@ struct NewModel:NavigationStackItem {
         hasher.combine(id)
     }
     
-    var id: String
+    var id: String = UUID().uuidString
     
     var title: String
     
@@ -100,6 +96,13 @@ public struct Model: NavigationStackItem {
     public var id: String = UUID().uuidString
     
     public var title: String
+    
+    public init(rightToolButtonVM: TTMButtonViewModel? = nil, leftToolButtonVM: TTMButtonViewModel? = nil, id: String = UUID().uuidString, title: String) {
+        self.rightToolButtonVM = rightToolButtonVM
+        self.leftToolButtonVM = leftToolButtonVM
+        self.id = id
+        self.title = title
+    }
     
     
 }
@@ -136,11 +139,11 @@ public struct TTMNavbar<Content:View>: View {
 //                .navigationBarTitle(Text(ttMNavbarViewModel.navbartitle)
 //                    .font(.system(size: 20))
 //                    .fontWeight(.bold))
-                .navigationBarTitle (Text("TEST"), displayMode: .inline)
+                .navigationBarTitle (Text(ttMNavbarViewModel.navbartitle), displayMode: .inline)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbarBackground(.red, for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
-                .navigationBarBackButtonHidden(true)
+                .navigationBarBackButtonHidden(false)
 
             }
         }
@@ -161,7 +164,7 @@ struct SwiftUIView_Previews: PreviewProvider {
 
                 }
             }
-            .navigationBarBackButtonHidden(true)
+            
             .destionationNavBar(hadler: { (val:Model) in
 
                 VStack{
@@ -182,7 +185,7 @@ struct SwiftUIView_Previews: PreviewProvider {
 extension View {
     
     @ViewBuilder
-    func destionationNavBar<T:NavigationStackItem,U:View>(hadler: @escaping ((T) -> U)) -> some View {
+    public func destionationNavBar<T:NavigationStackItem,U:View>(hadler: @escaping ((T) -> U)) -> some View {
         navigationDestination(for: T.self) { value in
                 hadler(value)
                 .toolbar {

@@ -7,42 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9314B250295E392F00558771 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9314B24F295E392F00558771 /* Settings.bundle */; };
 		93166377295627EC00100536 /* SummerSiteProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93166376295627EC00100536 /* SummerSiteProjectApp.swift */; };
-		93166379295627EC00100536 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93166378295627EC00100536 /* ContentView.swift */; };
 		9316637B295627ED00100536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9316637A295627ED00100536 /* Assets.xcassets */; };
 		9316637E295627ED00100536 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9316637D295627ED00100536 /* Preview Assets.xcassets */; };
 		9316638B2956281E00100536 /* LoginAndSignModuleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316638A2956281E00100536 /* LoginAndSignModuleApp.swift */; };
-		9316638D2956281E00100536 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316638C2956281E00100536 /* ContentView.swift */; };
 		9316638F2956281E00100536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9316638E2956281E00100536 /* Assets.xcassets */; };
 		931663922956281E00100536 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931663912956281E00100536 /* Preview Assets.xcassets */; };
-		931DEC5E295E2DC70016D915 /* SummerSiteProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DEC59295E2DC70016D915 /* SummerSiteProjectApp.swift */; };
-		931DEC5F295E2DC70016D915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931DEC5A295E2DC70016D915 /* Assets.xcassets */; };
-		931DEC60295E2DC70016D915 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931DEC5C295E2DC70016D915 /* Preview Assets.xcassets */; };
-		931DEC61295E2DC70016D915 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DEC5D295E2DC70016D915 /* ContentView.swift */; };
+		9321815E2968C13D00DCDD1B /* CameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321815D2968C13D00DCDD1B /* CameraScreen.swift */; };
 		932815EE295CD5A1004F8ABC /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932815ED295CD5A1004F8ABC /* Work.swift */; };
-		93454D812958BC7F00556C35 /* SummerAppPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 93454D802958BC7F00556C35 /* SummerAppPackage */; };
+		934889BA296B2B1A0001F833 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934889B9296B2B1A0001F833 /* LocationManager.swift */; };
+		937262D429885736004859B5 /* LoginSignUpModule in Frameworks */ = {isa = PBXBuildFile; productRef = 937262D329885736004859B5 /* LoginSignUpModule */; };
+		938F5360297FB66100AFFFA4 /* SummerSiteProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938F535A297FB66100AFFFA4 /* SummerSiteProjectApp.swift */; };
+		938F5361297FB66100AFFFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938F535B297FB66100AFFFA4 /* Assets.xcassets */; };
+		938F5362297FB66100AFFFA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938F535D297FB66100AFFFA4 /* Preview Assets.xcassets */; };
+		93978BFE29788950004F43A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93978BFD29788950004F43A8 /* GoogleService-Info.plist */; };
+		93DA23EC296F0B2E008DC029 /* MapLocationTTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA23EB296F0B2E008DC029 /* MapLocationTTView.swift */; };
+		93F9D3D62980661B002176DE /* LoginSignUpModule in Frameworks */ = {isa = PBXBuildFile; productRef = 93F9D3D52980661B002176DE /* LoginSignUpModule */; };
+		93F9D3D829806685002176DE /* UIComponentsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 93F9D3D729806685002176DE /* UIComponentsPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9304C7F0297F1F4800DE8FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9304C7F1297F23F800DE8FA8 /* TTCafeCommon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TTCafeCommon; path = ../../Playgrounds/TTCafeCommon; sourceTree = "<group>"; };
+		9314B24F295E392F00558771 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		93166373295627EC00100536 /* SummerSiteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerSiteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93166376295627EC00100536 /* SummerSiteProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerSiteProjectApp.swift; sourceTree = "<group>"; };
-		93166378295627EC00100536 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9316637A295627ED00100536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9316637D295627ED00100536 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		931663882956281E00100536 /* LoginAndSignModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginAndSignModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9316638A2956281E00100536 /* LoginAndSignModuleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndSignModuleApp.swift; sourceTree = "<group>"; };
-		9316638C2956281E00100536 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9316638E2956281E00100536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931663912956281E00100536 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		931DEC59295E2DC70016D915 /* SummerSiteProjectApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummerSiteProjectApp.swift; sourceTree = "<group>"; };
-		931DEC5A295E2DC70016D915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		931DEC5C295E2DC70016D915 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		931DEC5D295E2DC70016D915 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9321815D2968C13D00DCDD1B /* CameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreen.swift; sourceTree = "<group>"; };
 		932815ED295CD5A1004F8ABC /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		934889B9296B2B1A0001F833 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		935173D8295E346300601F09 /* InfrastructurePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InfrastructurePackage; sourceTree = "<group>"; };
 		935173D9295E347300601F09 /* SummerAppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SummerAppPackage; sourceTree = "<group>"; };
 		935173DA295E347E00601F09 /* UIComponentsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponentsPackage; sourceTree = "<group>"; };
 		9355C5AC2958A61F008D2B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		938F535A297FB66100AFFFA4 /* SummerSiteProjectApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummerSiteProjectApp.swift; sourceTree = "<group>"; };
+		938F535B297FB66100AFFFA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		938F535D297FB66100AFFFA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		938F535F297FB66100AFFFA4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93978BFD29788950004F43A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93DA23EB296F0B2E008DC029 /* MapLocationTTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationTTView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F9D3D62980661B002176DE /* LoginSignUpModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93454D812958BC7F00556C35 /* SummerAppPackage in Frameworks */,
+				937262D429885736004859B5 /* LoginSignUpModule in Frameworks */,
+				93F9D3D829806685002176DE /* UIComponentsPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +78,7 @@
 		9316636A295627EC00100536 = {
 			isa = PBXGroup;
 			children = (
+				9314B24F295E392F00558771 /* Settings.bundle */,
 				935173D7295E346300601F09 /* Packages */,
 				93166375295627EC00100536 /* SummerSiteProject */,
 				931663892956281E00100536 /* LoginAndSignModule */,
@@ -87,9 +99,10 @@
 		93166375295627EC00100536 /* SummerSiteProject */ = {
 			isa = PBXGroup;
 			children = (
-				931DEC58295E2DC70016D915 /* SummerSiteProject */,
+				9304C7F0297F1F4800DE8FA8 /* Info.plist */,
+				93978BFD29788950004F43A8 /* GoogleService-Info.plist */,
 				93166376295627EC00100536 /* SummerSiteProjectApp.swift */,
-				93166378295627EC00100536 /* ContentView.swift */,
+				938F5359297FB66100AFFFA4 /* SummerSiteProject */,
 				9316637A295627ED00100536 /* Assets.xcassets */,
 				9316637C295627ED00100536 /* Preview Content */,
 			);
@@ -107,12 +120,15 @@
 		931663892956281E00100536 /* LoginAndSignModule */ = {
 			isa = PBXGroup;
 			children = (
+				93978BE4297879C7004F43A8 /* Scenes */,
+				93978BE3297879AB004F43A8 /* Sources */,
 				9355C5AC2958A61F008D2B91 /* Info.plist */,
-				9316638A2956281E00100536 /* LoginAndSignModuleApp.swift */,
-				9316638C2956281E00100536 /* ContentView.swift */,
 				9316638E2956281E00100536 /* Assets.xcassets */,
 				931663902956281E00100536 /* Preview Content */,
 				932815ED295CD5A1004F8ABC /* Work.swift */,
+				9321815D2968C13D00DCDD1B /* CameraScreen.swift */,
+				934889B9296B2B1A0001F833 /* LocationManager.swift */,
+				93DA23EB296F0B2E008DC029 /* MapLocationTTView.swift */,
 			);
 			path = LoginAndSignModule;
 			sourceTree = "<group>";
@@ -125,28 +141,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		931DEC58295E2DC70016D915 /* SummerSiteProject */ = {
-			isa = PBXGroup;
-			children = (
-				931DEC59295E2DC70016D915 /* SummerSiteProjectApp.swift */,
-				931DEC5A295E2DC70016D915 /* Assets.xcassets */,
-				931DEC5B295E2DC70016D915 /* Preview Content */,
-				931DEC5D295E2DC70016D915 /* ContentView.swift */,
-			);
-			name = SummerSiteProject;
-			sourceTree = "<group>";
-		};
-		931DEC5B295E2DC70016D915 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				931DEC5C295E2DC70016D915 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		935173D7295E346300601F09 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				9304C7F1297F23F800DE8FA8 /* TTCafeCommon */,
 				935173D8295E346300601F09 /* InfrastructurePackage */,
 				935173D9295E347300601F09 /* SummerAppPackage */,
 				935173DA295E347E00601F09 /* UIComponentsPackage */,
@@ -159,6 +157,40 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		938F5359297FB66100AFFFA4 /* SummerSiteProject */ = {
+			isa = PBXGroup;
+			children = (
+				938F535A297FB66100AFFFA4 /* SummerSiteProjectApp.swift */,
+				938F535B297FB66100AFFFA4 /* Assets.xcassets */,
+				938F535C297FB66100AFFFA4 /* Preview Content */,
+				938F535F297FB66100AFFFA4 /* Info.plist */,
+			);
+			name = SummerSiteProject;
+			sourceTree = "<group>";
+		};
+		938F535C297FB66100AFFFA4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				938F535D297FB66100AFFFA4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93978BE3297879AB004F43A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9316638A2956281E00100536 /* LoginAndSignModuleApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		93978BE4297879C7004F43A8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +209,9 @@
 			dependencies = (
 			);
 			name = SummerSiteProject;
+			packageProductDependencies = (
+				93F9D3D52980661B002176DE /* LoginSignUpModule */,
+			);
 			productName = SummerSiteProject;
 			productReference = 93166373295627EC00100536 /* SummerSiteProject.app */;
 			productType = "com.apple.product-type.application";
@@ -188,6 +223,8 @@
 				931663842956281E00100536 /* Sources */,
 				931663852956281E00100536 /* Frameworks */,
 				931663862956281E00100536 /* Resources */,
+				9314B251295E3BAE00558771 /* ShellScript */,
+				9321815A2968B41600DCDD1B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -195,7 +232,8 @@
 			);
 			name = LoginAndSignModule;
 			packageProductDependencies = (
-				93454D802958BC7F00556C35 /* SummerAppPackage */,
+				93F9D3D729806685002176DE /* UIComponentsPackage */,
+				937262D329885736004859B5 /* LoginSignUpModule */,
 			);
 			productName = LoginAndSignModule;
 			productReference = 931663882956281E00100536 /* LoginAndSignModule.app */;
@@ -228,6 +266,10 @@
 				Base,
 			);
 			mainGroup = 9316636A295627EC00100536;
+			packageReferences = (
+				93978BE529787AFE004F43A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				93978BEC29787CBD004F43A8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 93166374295627EC00100536 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,9 +285,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931DEC60295E2DC70016D915 /* Preview Assets.xcassets in Resources */,
 				9316637E295627ED00100536 /* Preview Assets.xcassets in Resources */,
-				931DEC5F295E2DC70016D915 /* Assets.xcassets in Resources */,
+				93978BFE29788950004F43A8 /* GoogleService-Info.plist in Resources */,
+				938F5362297FB66100AFFFA4 /* Preview Assets.xcassets in Resources */,
+				938F5361297FB66100AFFFA4 /* Assets.xcassets in Resources */,
 				9316637B295627ED00100536 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,21 +298,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				931663922956281E00100536 /* Preview Assets.xcassets in Resources */,
+				9314B250295E392F00558771 /* Settings.bundle in Resources */,
 				9316638F2956281E00100536 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9314B251295E3BAE00558771 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\nif [ \"$CONFIGURATION\" == \"Release\" ]; then\nrm -Rf $BUILD_APP_DIR/Settings.bundle\nfi\n";
+		};
+		9321815A2968B41600DCDD1B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPLIST=\"${PROJECT_DIR}/Users/vb37437/Desktop/SwiftUISummerSite/SummerSiteProject/LoginAndSignModule/Info.plist\"\nPLB=/usr/libexec/PlistBuddy\nLAST_NUMBER=$($PLB -c \"Print CFBundleVersion\" \"$PLIST\")\nNEW_VERSION=$(($LAST_NUMBER + 2))\n$PLB -c \"Set :CFBundleVersion $NEW_VERSION\" \"$PLIST\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9316636F295627EC00100536 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93166379295627EC00100536 /* ContentView.swift in Sources */,
-				931DEC5E295E2DC70016D915 /* SummerSiteProjectApp.swift in Sources */,
-				931DEC61295E2DC70016D915 /* ContentView.swift in Sources */,
 				93166377295627EC00100536 /* SummerSiteProjectApp.swift in Sources */,
+				938F5360297FB66100AFFFA4 /* SummerSiteProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9316638D2956281E00100536 /* ContentView.swift in Sources */,
 				9316638B2956281E00100536 /* LoginAndSignModuleApp.swift in Sources */,
+				934889BA296B2B1A0001F833 /* LocationManager.swift in Sources */,
+				93DA23EC296F0B2E008DC029 /* MapLocationTTView.swift in Sources */,
+				9321815E2968C13D00DCDD1B /* CameraScreen.swift in Sources */,
 				932815EE295CD5A1004F8ABC /* Work.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +492,7 @@
 				DEVELOPMENT_TEAM = 948AT25T94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SummerSiteProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,6 +522,7 @@
 				DEVELOPMENT_TEAM = 948AT25T94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SummerSiteProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -470,11 +553,16 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginAndSignModule/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = DSADSADSADSAD;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Lütfen Konum Bilgilerini Kullanabilmemiz için izin Verin";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Lütfen Konum Bilgilerini Kullanabilmemiz için izin Verin";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Lütfen Konum Bilgilerini Kullanabilmemiz için izin Verin";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,11 +588,16 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginAndSignModule/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = DSADSADSADSAD;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Lütfen Konum Bilgilerini Kullanabilmemiz için izin Verin";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Lütfen Konum Bilgilerini Kullanabilmemiz için izin Verin";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Lütfen Konum Bilgilerini Kullanabilmemiz için izin Verin";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,10 +643,37 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		93978BE529787AFE004F43A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 9.6.0;
+			};
+		};
+		93978BEC29787CBD004F43A8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		93454D802958BC7F00556C35 /* SummerAppPackage */ = {
+		937262D329885736004859B5 /* LoginSignUpModule */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = SummerAppPackage;
+			productName = LoginSignUpModule;
+		};
+		93F9D3D52980661B002176DE /* LoginSignUpModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LoginSignUpModule;
+		};
+		93F9D3D729806685002176DE /* UIComponentsPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIComponentsPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

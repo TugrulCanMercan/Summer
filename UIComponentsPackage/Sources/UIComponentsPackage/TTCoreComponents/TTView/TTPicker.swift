@@ -71,7 +71,6 @@ struct TTPicker_Previews: PreviewProvider {
                 ForEach(1...3,id:\.self) { _ in
                     Text("dsadsa")
                 }
-            
             }
         }, select: .constant("tugrul"))
     }

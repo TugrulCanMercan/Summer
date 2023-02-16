@@ -48,6 +48,7 @@ public struct TTSecureField: View {
                         .modifier(TTTextFieldModifier(text: $text, color: borderColor))
                     
                 }
+                
 
             }
 
