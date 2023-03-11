@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930F45FF29AD3F9100ADEBEC /* SignUpModule in Frameworks */ = {isa = PBXBuildFile; productRef = 930F45FE29AD3F9100ADEBEC /* SignUpModule */; };
 		9314B250295E392F00558771 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9314B24F295E392F00558771 /* Settings.bundle */; };
 		93166377295627EC00100536 /* SummerSiteProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93166376295627EC00100536 /* SummerSiteProjectApp.swift */; };
 		9316637B295627ED00100536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9316637A295627ED00100536 /* Assets.xcassets */; };
@@ -17,19 +18,21 @@
 		9321815E2968C13D00DCDD1B /* CameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321815D2968C13D00DCDD1B /* CameraScreen.swift */; };
 		932815EE295CD5A1004F8ABC /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932815ED295CD5A1004F8ABC /* Work.swift */; };
 		934889BA296B2B1A0001F833 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934889B9296B2B1A0001F833 /* LocationManager.swift */; };
-		937262D429885736004859B5 /* LoginSignUpModule in Frameworks */ = {isa = PBXBuildFile; productRef = 937262D329885736004859B5 /* LoginSignUpModule */; };
 		938F5360297FB66100AFFFA4 /* SummerSiteProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938F535A297FB66100AFFFA4 /* SummerSiteProjectApp.swift */; };
 		938F5361297FB66100AFFFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938F535B297FB66100AFFFA4 /* Assets.xcassets */; };
 		938F5362297FB66100AFFFA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938F535D297FB66100AFFFA4 /* Preview Assets.xcassets */; };
 		93978BFE29788950004F43A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93978BFD29788950004F43A8 /* GoogleService-Info.plist */; };
+		93ACC88429AD3BB900A5AB88 /* LoginSignUpModule in Frameworks */ = {isa = PBXBuildFile; productRef = 93ACC88329AD3BB900A5AB88 /* LoginSignUpModule */; };
+		93B81FFB29BB6398004D12A1 /* LoginSignUpModule in Frameworks */ = {isa = PBXBuildFile; productRef = 93B81FFA29BB6398004D12A1 /* LoginSignUpModule */; };
 		93DA23EC296F0B2E008DC029 /* MapLocationTTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA23EB296F0B2E008DC029 /* MapLocationTTView.swift */; };
-		93F9D3D62980661B002176DE /* LoginSignUpModule in Frameworks */ = {isa = PBXBuildFile; productRef = 93F9D3D52980661B002176DE /* LoginSignUpModule */; };
-		93F9D3D829806685002176DE /* UIComponentsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 93F9D3D729806685002176DE /* UIComponentsPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9304C7F0297F1F4800DE8FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		9304C7F1297F23F800DE8FA8 /* TTCafeCommon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TTCafeCommon; path = ../../Playgrounds/TTCafeCommon; sourceTree = "<group>"; };
+		930F45FA29AD3E1C00ADEBEC /* InfrastructurePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InfrastructurePackage; sourceTree = "<group>"; };
+		930F45FB29AD3E2F00ADEBEC /* SummerAppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SummerAppPackage; sourceTree = "<group>"; };
+		930F45FC29AD3E3700ADEBEC /* TTCafeCommon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TTCafeCommon; sourceTree = "<group>"; };
+		930F45FD29AD3E4600ADEBEC /* UIComponentsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponentsPackage; sourceTree = "<group>"; };
 		9314B24F295E392F00558771 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		93166373295627EC00100536 /* SummerSiteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerSiteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93166376295627EC00100536 /* SummerSiteProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerSiteProjectApp.swift; sourceTree = "<group>"; };
@@ -42,9 +45,6 @@
 		9321815D2968C13D00DCDD1B /* CameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreen.swift; sourceTree = "<group>"; };
 		932815ED295CD5A1004F8ABC /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 		934889B9296B2B1A0001F833 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		935173D8295E346300601F09 /* InfrastructurePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InfrastructurePackage; sourceTree = "<group>"; };
-		935173D9295E347300601F09 /* SummerAppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SummerAppPackage; sourceTree = "<group>"; };
-		935173DA295E347E00601F09 /* UIComponentsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponentsPackage; sourceTree = "<group>"; };
 		9355C5AC2958A61F008D2B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		938F535A297FB66100AFFFA4 /* SummerSiteProjectApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummerSiteProjectApp.swift; sourceTree = "<group>"; };
 		938F535B297FB66100AFFFA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F9D3D62980661B002176DE /* LoginSignUpModule in Frameworks */,
+				93ACC88429AD3BB900A5AB88 /* LoginSignUpModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				937262D429885736004859B5 /* LoginSignUpModule in Frameworks */,
-				93F9D3D829806685002176DE /* UIComponentsPackage in Frameworks */,
+				93B81FFB29BB6398004D12A1 /* LoginSignUpModule in Frameworks */,
+				930F45FF29AD3F9100ADEBEC /* SignUpModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,10 +144,10 @@
 		935173D7295E346300601F09 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				9304C7F1297F23F800DE8FA8 /* TTCafeCommon */,
-				935173D8295E346300601F09 /* InfrastructurePackage */,
-				935173D9295E347300601F09 /* SummerAppPackage */,
-				935173DA295E347E00601F09 /* UIComponentsPackage */,
+				930F45FA29AD3E1C00ADEBEC /* InfrastructurePackage */,
+				930F45FB29AD3E2F00ADEBEC /* SummerAppPackage */,
+				930F45FC29AD3E3700ADEBEC /* TTCafeCommon */,
+				930F45FD29AD3E4600ADEBEC /* UIComponentsPackage */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			);
 			name = SummerSiteProject;
 			packageProductDependencies = (
-				93F9D3D52980661B002176DE /* LoginSignUpModule */,
+				93ACC88329AD3BB900A5AB88 /* LoginSignUpModule */,
 			);
 			productName = SummerSiteProject;
 			productReference = 93166373295627EC00100536 /* SummerSiteProject.app */;
@@ -232,8 +232,8 @@
 			);
 			name = LoginAndSignModule;
 			packageProductDependencies = (
-				93F9D3D729806685002176DE /* UIComponentsPackage */,
-				937262D329885736004859B5 /* LoginSignUpModule */,
+				930F45FE29AD3F9100ADEBEC /* SignUpModule */,
+				93B81FFA29BB6398004D12A1 /* LoginSignUpModule */,
 			);
 			productName = LoginAndSignModule;
 			productReference = 931663882956281E00100536 /* LoginAndSignModule.app */;
@@ -663,17 +663,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		937262D329885736004859B5 /* LoginSignUpModule */ = {
+		930F45FE29AD3F9100ADEBEC /* SignUpModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SignUpModule;
+		};
+		93ACC88329AD3BB900A5AB88 /* LoginSignUpModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LoginSignUpModule;
 		};
-		93F9D3D52980661B002176DE /* LoginSignUpModule */ = {
+		93B81FFA29BB6398004D12A1 /* LoginSignUpModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LoginSignUpModule;
-		};
-		93F9D3D729806685002176DE /* UIComponentsPackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = UIComponentsPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -8,68 +8,6 @@
 import SwiftUI
 
 
-//struct Bicycle: View {
-//    var body: some View {
-//        VStack{
-//            HStack(spacing:0){
-//
-//                HeadShape()
-//                    .stroke()
-//                    .stroke(lineWidth: 2)
-//                    .fill(Color.red)
-//
-//                    .overlay {
-//                        VStack {
-//                            Ellipse()
-//
-//                            HStack{
-//                                Circle()
-//                                    .stroke()
-//                                    .overlay {
-//                                        Circle()
-//                                            .frame(height: 10)
-//                                            .offset(x:10,y:-8)
-//                                    }
-//                                Circle()
-//                                    .stroke()
-//                                    .overlay {
-//                                        Circle()
-//                                            .frame(height: 10)
-//                                    }
-//                            }
-//
-//                            Rectangle()
-//                                .frame(height: 10)
-//                                .frame(width: 100)
-//                                .offset(y:30)
-//
-//
-//                            Rectangle()
-//                                .frame(height: 10)
-//                                .frame(width: 100)
-//
-//
-//
-//                        }
-//                        .frame(height: 70)
-//                    }
-//                    .frame(width: 170)
-//                    .frame(height: 350)
-//            }
-//
-//
-//
-//
-//
-//        }
-//
-//
-//
-//    }
-//
-//}
-
-
 extension Color {
     static let darkStart = Color("darkstart")
     static let darkEnd = Color("darkend")

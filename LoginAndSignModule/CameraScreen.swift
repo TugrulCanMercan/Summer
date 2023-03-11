@@ -57,7 +57,6 @@ class CameraManager:NSObject, ObservableObject {
             
             self.setupCamera()
             
-            
             return
         @unknown default:
             return

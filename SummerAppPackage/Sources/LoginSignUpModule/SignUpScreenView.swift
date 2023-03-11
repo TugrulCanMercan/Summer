@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UIComponentsPackage
+import PhotosUI
 
 struct SignUpScreenView: View {
     @State var errorMesj = ""
@@ -14,7 +15,13 @@ struct SignUpScreenView: View {
     @State var addressText = ""
     var body: some View {
         TTView(content: {
+            GeometryReader { proxy in
+                Circle().offset(x:-proxy.frame(in: .global).midX,y:-proxy.frame(in: .global).midY + 50)
+                    .fill(Color.yellow)
+            }
+            
             ScrollView {
+                
                 VStack {
                     NewTTTextField(text: $textFieldText, errorHandleText: errorMesj, height: 40, placeholder: "isim")
                     NewTTTextField(text: $textFieldText, errorHandleText: errorMesj, height: 40, placeholder: "Soy İsim")
@@ -28,14 +35,20 @@ struct SignUpScreenView: View {
                             .frame(height: 150)
                             .background(Color(uiColor: .systemGray4))
                             .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .padding(1)
+                            .background(Color.black)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            
                     }
 
                     NewTTTextField(text: $textFieldText, errorHandleText: errorMesj, height: 40, placeholder: "Kullanıcı")
                     
-                    TTPrimaryButton(clicked: {
+                    BaseButton(onClicked:{
                         
-                    }, title: "Lütfen Bina Kapı Bilgileri İçin Fotoğraf Yükleyin")
-                    .frame(height: 50)
+                    },placeHolder: "Lütfen Bina Kapı Bilgileri İçin Fotoğraf Yükleyin")
+                    .frame(maxWidth: .infinity, minHeight: 35)
+                    .modifier(BaseButtonPrimaryModifier())
+                    
                     Spacer()
                 }
                 .padding()
@@ -45,6 +58,7 @@ struct SignUpScreenView: View {
         },popUpContent: {
             
         },showActivate: .constant(false))
+        
     }
 }
 

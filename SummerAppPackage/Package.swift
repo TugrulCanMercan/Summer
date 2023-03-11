@@ -14,7 +14,8 @@ let package = Package(
         .library(name: "TugrulCan",
                  targets: ["TugrulCan"]),
         .library(name: "LoginSignUpModule",
-                 targets: ["LoginSignUpModule"])
+                 targets: ["LoginSignUpModule"]),
+        .library(name: "SignUpModule", targets: ["SignUpModule"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -31,7 +32,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SummerAppPackage",
-            dependencies: ["TugrulCan"]),
+            dependencies: ["LoginSignUpModule"]),
         .testTarget(
             name: "SummerAppPackageTests",
             dependencies: ["SummerAppPackage"]),
@@ -44,6 +45,7 @@ let package = Package(
                                .product(name: "FirebaseAuth", package: "firebase-ios-sdk"),
                                "TTCafeCommon"
                               ]
-               )
+               ),
+        .target(name: "SignUpModule",dependencies: ["UIComponentsPackage"])
     ]
 )
