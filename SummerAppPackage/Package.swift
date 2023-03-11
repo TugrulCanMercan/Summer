@@ -3,6 +3,11 @@
 
 import PackageDescription
 
+
+let sideDependencies: [Target.Dependency] = ["UIComponentsPackage",
+                                             "InfrastructurePackage",
+                                             "TTCafeCommon"]
+
 let package = Package(
     name: "SummerAppPackage",
     platforms: [.iOS(.v16)],
@@ -15,7 +20,13 @@ let package = Package(
                  targets: ["TugrulCan"]),
         .library(name: "LoginSignUpModule",
                  targets: ["LoginSignUpModule"]),
-        .library(name: "SignUpModule", targets: ["SignUpModule"])
+        .library(name: "SignUpModule",
+                 targets: ["SignUpModule"]),
+        .library(name: "CameraModule",
+                 targets: ["CameraModule"]),
+        .library(name: "LocationMangerModule",
+                 targets: ["LocationMangerModule"])
+        
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -46,6 +57,8 @@ let package = Package(
                                "TTCafeCommon"
                               ]
                ),
-        .target(name: "SignUpModule",dependencies: ["UIComponentsPackage"])
+        .target(name: "SignUpModule",dependencies: ["UIComponentsPackage"]),
+        .target(name: "CameraModule",dependencies: sideDependencies),
+        .target(name: "LocationMangerModule",dependencies: sideDependencies)
     ]
 )

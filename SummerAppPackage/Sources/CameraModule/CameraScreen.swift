@@ -8,9 +8,14 @@
 import SwiftUI
 import AVFoundation
 
-struct CameraScreen: View {
-    @StateObject var cameraManager = CameraManager()
-    var body: some View {
+public struct CameraScreen: View {
+    @StateObject var cameraManager: CameraManager
+    
+    public init(CameraManager: CameraManager = CameraManager(preview: AVCaptureVideoPreviewLayer())) {
+        self._cameraManager = .init(wrappedValue: CameraManager)
+    }
+    
+    public var body: some View {
         ZStack {
             CameraPreview(camera: cameraManager)
                 .ignoresSafeArea(.all,edges: .all)
@@ -27,7 +32,7 @@ struct CameraScreen_Previews: PreviewProvider {
     }
 }
 
-class CameraManager:NSObject, ObservableObject {
+public class CameraManager:NSObject, ObservableObject {
     @Published var isTaken = false
     @Published var isSaved = false
     let session = AVCaptureSession()
@@ -36,6 +41,17 @@ class CameraManager:NSObject, ObservableObject {
     @Published var pictureData = Data(count: 0)
     let metaDataOutput = AVCaptureMetadataOutput()
     
+    public init(isTaken: Bool = false,
+                isSaved: Bool = false,
+                output: AVCapturePhotoOutput = AVCapturePhotoOutput(),
+                preview: AVCaptureVideoPreviewLayer!,
+                pictureData: Data = Data(count: 0)) {
+        self.isTaken = isTaken
+        self.isSaved = isSaved
+        self.output = output
+        self.preview = preview
+        self.pictureData = pictureData
+    }
     
     func checkPermisson() {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
@@ -147,7 +163,7 @@ class CameraManager:NSObject, ObservableObject {
 }
 
 extension CameraManager: AVCapturePhotoCaptureDelegate {
-    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+    public func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         guard error == nil else {
 //            Handle Error
             return }
@@ -157,7 +173,7 @@ extension CameraManager: AVCapturePhotoCaptureDelegate {
 }
 
 extension CameraManager: AVCaptureMetadataOutputObjectsDelegate {
-    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+    public func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         session.stopRunning()
 
         if let metadataObject = metadataObjects.first {

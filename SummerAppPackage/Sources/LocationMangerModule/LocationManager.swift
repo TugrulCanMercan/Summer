@@ -10,22 +10,22 @@ import CoreLocation
 import MapKit
 
 
-enum LocationCustomError: Error {
+public enum LocationCustomError: Error {
     case LocationPlacesesError
     case ReversePlaceMarkError
 }
 
-class LocationManger:NSObject,ObservableObject {
-    static let shared = LocationManger()
-    @Published private(set) var errorText: String = ""
-    @Published private(set) var currentLocation: CLLocation?
-    @Published private(set) var pickedLocation: CLLocation?
-    @Published private(set) var pickedPlacemark: CLPlacemark?
+public class LocationManger: NSObject, ObservableObject {
+    public static let shared = LocationManger()
+    @Published public private(set) var errorText: String = ""
+    @Published public private(set) var currentLocation: CLLocation?
+    @Published public private(set) var pickedLocation: CLLocation?
+    @Published public private(set) var pickedPlacemark: CLPlacemark?
     
     private let manager = CLLocationManager()
-    let mapView = MKMapView()
+    public let mapView = MKMapView()
     
-    override init() {
+    public override init() {
         super.init()
         getUserLocation()
     }
@@ -42,7 +42,7 @@ class LocationManger:NSObject,ObservableObject {
         errorText = "Hay aksi konum bilgilerinizi Paylaşmaya İzin vermediniz"
     }
     
-    func fetchPlaces(searchValue: String) async throws -> [CLPlacemark] {
+    public func fetchPlaces(searchValue: String) async throws -> [CLPlacemark] {
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchValue.lowercased()
         do {
@@ -65,15 +65,15 @@ class LocationManger:NSObject,ObservableObject {
 //        }
     }
     
-    func stopUpdatingLocation() {
+    public func stopUpdatingLocation() {
         manager.stopUpdatingLocation()
     }
     
-    func currentLocationGetReuqest(){
+    public func currentLocationGetReuqest(){
         manager.requestLocation()
     }
     
-    func addDraggablePin(coordinate: CLLocationCoordinate2D) {
+    public func addDraggablePin(coordinate: CLLocationCoordinate2D) {
         let annotation = MKPointAnnotation()
         annotation.coordinate = coordinate
         Task {
@@ -87,7 +87,7 @@ class LocationManger:NSObject,ObservableObject {
         }
     }
     
-    func updatePlacemark(location: CLLocation) {
+    public func updatePlacemark(location: CLLocation) {
         Task {
             do {
                 guard let place = try await reverseLocationCoordinate(location: location) else {return}
@@ -117,21 +117,21 @@ class LocationManger:NSObject,ObservableObject {
         
     }
     
-    func clearAllPickedPlacemarkPickedLocation() {
+    public func clearAllPickedPlacemarkPickedLocation() {
         pickedLocation = nil
         pickedPlacemark = nil
     }
-    func clearAllLocation() {
+    public func clearAllLocation() {
         pickedLocation = nil
         pickedPlacemark = nil
         currentLocation = nil
     }
 /// Haritada annotationları kaldırır
-    func mapviewRemoveAllNotations() {
+    public func mapviewRemoveAllNotations() {
         mapView.removeAnnotations(mapView.annotations)
     }
     
-    func currentLocation(currentCoordinate: CLLocation) {
+    public func currentLocation(currentCoordinate: CLLocation) {
         UIView.animate(withDuration: 0.3) {
             self.mapView.region = .init(center: currentCoordinate.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
         }
@@ -141,18 +141,18 @@ class LocationManger:NSObject,ObservableObject {
 }
 
 //  Delegate ve Datasource Extensions
-extension LocationManger: CLLocationManagerDelegate,MKMapViewDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+extension LocationManger: CLLocationManagerDelegate, MKMapViewDelegate {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let currentlocation = locations.last else {return}
         self.currentLocation = currentlocation
     }
     
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         
     }
 
     
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+    public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         switch manager.authorizationStatus {
             
         case .notDetermined:
@@ -171,7 +171,7 @@ extension LocationManger: CLLocationManagerDelegate,MKMapViewDelegate {
         }
     }
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let marker = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "PIN")
         marker.isDraggable = true
         marker.canShowCallout = false
@@ -179,7 +179,7 @@ extension LocationManger: CLLocationManagerDelegate,MKMapViewDelegate {
         return marker
     }
     
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState) {
+    public func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState) {
         guard let newLocation = view.annotation?.coordinate else {return}
         self.pickedLocation = .init(latitude: newLocation.latitude, longitude: newLocation.longitude)
         updatePlacemark(location: .init(latitude: newLocation.latitude, longitude: newLocation.longitude))

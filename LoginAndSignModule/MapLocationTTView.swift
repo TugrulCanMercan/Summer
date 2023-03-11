@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 import MapKit
 import UIComponentsPackage
+import LocationMangerModule
 
 
 class MapLocationTTViewModel: TTMNavbarViewModel {
@@ -324,7 +325,7 @@ struct ExtractedView: View {
         .sheet(isPresented: $showQrCodeSheet, content: {
             VStack {
                 Text("dsadsa")
-                CameraScreen()
+//                CameraScreen()
             }
             
         })

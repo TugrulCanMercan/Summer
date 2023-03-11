@@ -15,9 +15,8 @@
 		9316638B2956281E00100536 /* LoginAndSignModuleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316638A2956281E00100536 /* LoginAndSignModuleApp.swift */; };
 		9316638F2956281E00100536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9316638E2956281E00100536 /* Assets.xcassets */; };
 		931663922956281E00100536 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931663912956281E00100536 /* Preview Assets.xcassets */; };
-		9321815E2968C13D00DCDD1B /* CameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321815D2968C13D00DCDD1B /* CameraScreen.swift */; };
 		932815EE295CD5A1004F8ABC /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932815ED295CD5A1004F8ABC /* Work.swift */; };
-		934889BA296B2B1A0001F833 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934889B9296B2B1A0001F833 /* LocationManager.swift */; };
+		932E40BF29BCAF0200C1D8DF /* LocationMangerModule in Frameworks */ = {isa = PBXBuildFile; productRef = 932E40BE29BCAF0200C1D8DF /* LocationMangerModule */; };
 		938F5360297FB66100AFFFA4 /* SummerSiteProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938F535A297FB66100AFFFA4 /* SummerSiteProjectApp.swift */; };
 		938F5361297FB66100AFFFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938F535B297FB66100AFFFA4 /* Assets.xcassets */; };
 		938F5362297FB66100AFFFA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938F535D297FB66100AFFFA4 /* Preview Assets.xcassets */; };
@@ -42,9 +41,7 @@
 		9316638A2956281E00100536 /* LoginAndSignModuleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndSignModuleApp.swift; sourceTree = "<group>"; };
 		9316638E2956281E00100536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931663912956281E00100536 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9321815D2968C13D00DCDD1B /* CameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreen.swift; sourceTree = "<group>"; };
 		932815ED295CD5A1004F8ABC /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
-		934889B9296B2B1A0001F833 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9355C5AC2958A61F008D2B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		938F535A297FB66100AFFFA4 /* SummerSiteProjectApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummerSiteProjectApp.swift; sourceTree = "<group>"; };
 		938F535B297FB66100AFFFA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932E40BF29BCAF0200C1D8DF /* LocationMangerModule in Frameworks */,
 				93B81FFB29BB6398004D12A1 /* LoginSignUpModule in Frameworks */,
 				930F45FF29AD3F9100ADEBEC /* SignUpModule in Frameworks */,
 			);
@@ -126,8 +124,6 @@
 				9316638E2956281E00100536 /* Assets.xcassets */,
 				931663902956281E00100536 /* Preview Content */,
 				932815ED295CD5A1004F8ABC /* Work.swift */,
-				9321815D2968C13D00DCDD1B /* CameraScreen.swift */,
-				934889B9296B2B1A0001F833 /* LocationManager.swift */,
 				93DA23EB296F0B2E008DC029 /* MapLocationTTView.swift */,
 			);
 			path = LoginAndSignModule;
@@ -234,6 +230,7 @@
 			packageProductDependencies = (
 				930F45FE29AD3F9100ADEBEC /* SignUpModule */,
 				93B81FFA29BB6398004D12A1 /* LoginSignUpModule */,
+				932E40BE29BCAF0200C1D8DF /* LocationMangerModule */,
 			);
 			productName = LoginAndSignModule;
 			productReference = 931663882956281E00100536 /* LoginAndSignModule.app */;
@@ -357,9 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9316638B2956281E00100536 /* LoginAndSignModuleApp.swift in Sources */,
-				934889BA296B2B1A0001F833 /* LocationManager.swift in Sources */,
 				93DA23EC296F0B2E008DC029 /* MapLocationTTView.swift in Sources */,
-				9321815E2968C13D00DCDD1B /* CameraScreen.swift in Sources */,
 				932815EE295CD5A1004F8ABC /* Work.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,6 +661,10 @@
 		930F45FE29AD3F9100ADEBEC /* SignUpModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SignUpModule;
+		};
+		932E40BE29BCAF0200C1D8DF /* LocationMangerModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LocationMangerModule;
 		};
 		93ACC88329AD3BB900A5AB88 /* LoginSignUpModule */ = {
 			isa = XCSwiftPackageProductDependency;
