@@ -105,7 +105,7 @@ public struct LoginViewScreen: View {
                         
                     }
                     .destionationNavBar(hadler: { (val:Model) in
-                        SignUpScreenView()
+//                        SignUpScreenView()
                     })
                     .frame(height: proxy.size.height,alignment: .center)
                     .padding()
