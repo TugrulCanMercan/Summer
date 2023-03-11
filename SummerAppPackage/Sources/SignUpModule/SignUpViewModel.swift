@@ -10,7 +10,6 @@ import Foundation
 
 final class SignUpViewModel: ObservableObject {
     
-    
     func imageInstall(image: Data) {
         
     }
